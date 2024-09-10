@@ -1,0 +1,19 @@
+@font-face {
+    font-family: vazir;
+    src: url(../fonts/vazir-font-v16.1.0/Vazir-Medium.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "vazir Bold";
+    src: url(../fonts/vazir-font-v16.1.0/Vazir-Bold.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "samim Bold";
+    src: url(../fonts/samim/Samim-Bold.ttf) format(truetype);
+}
+
+@font-face {
+    font-family: "vazir Light";
+    src: url(vazir-Light.ttf) format(truetype);
+}

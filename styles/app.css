@@ -1,0 +1,968 @@
+@import url(fonts.css);
+@import url(reset.css);
+@import url(grid.css);
+
+
+html {
+    font-size: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: vazir;
+    font-size: 1.6rem;
+    color: rgb(18, 16, 27);
+}
+
+/*************   Header    ************/
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    padding: 2rem;
+
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+}
+
+.logo {
+    width: 8rem;
+}
+
+img {
+    width: 100%;
+
+}
+
+.navbar_list {
+    display: flex;
+    align-items: center;
+    gap: 6rem;
+}
+
+.navbar_item {}
+
+.navbar_link {
+    font-size: 1.8rem;
+    font-family: vazir;
+    color: rgb(55, 41, 116);
+    font-weight: bold;
+    position: relative;
+    padding-bottom: .5rem;
+
+}
+.navbar_link::after,.navbar_link::before {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 0;
+    background-color: rgb(55, 41, 116);
+    bottom: 0;
+
+}
+
+.navbar_link:hover::after{
+    width: 50%;
+    right: 50%;
+    transition: all 0.5s ease-out;
+
+}
+.navbar_link:hover::before {
+    width: 50%;
+    left: 50%;
+    transition: all .5s ease-out;
+
+}
+.menu{
+    cursor: pointer;
+    display: none;
+}
+
+.menu-icon {
+    margin: 0 auto;
+}
+.menu-icon--hide{
+    display: none;
+}
+.menu-close--hide{
+    display: none;
+}
+
+.menu-list {
+    position: absolute;
+    z-index: 100;
+    width: 60%;
+    background-color: rgb(55, 41, 116);
+    margin: 0 auto;
+    top: 7.5rem;
+    right: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 0;
+    overflow: hidden;
+    transition: all 200ms ease-in;
+
+}
+.menu-list--active{
+    height: 33rem;
+    transition: all 200ms ease-in;
+}
+.menu-list_item {
+    border-bottom: 1px solid rgb(215, 234, 252);
+    padding: 2rem;
+    width: 60%;
+    text-align: center;
+}
+
+.menu-list_link {
+    color: #fff;
+    font-weight: bold;
+}
+
+.menu-list_link:hover {
+    color: rgb(215, 234, 252);
+}
+
+.navbar_button {
+    padding: 1rem 5rem;
+    background-color: #fff;
+    outline: none;
+    border-radius: 1rem;
+    border: 2px solid rgb(55, 41, 116);
+    font-size: 2rem;
+    font-family: 'vazir';
+    font-weight: bold;
+    color: rgb(18, 16, 27);
+    box-shadow: 0 0 4rem rgba(55, 41, 116, 0.288);
+}
+
+.navbar_button:hover {
+    background-color: rgb(55, 41, 116);
+    color: #fff;
+    transition: all 3ms ease-in;
+}
+
+
+
+/*************   Main    ************/
+
+/*************   Introduction Section    ************/
+.introduction {
+    background-color: rgb(215, 234, 252);
+    position: relative;
+    z-index: 2;
+}
+
+.title-box {
+    width: 40%;
+    height: 85vh;
+    min-height: 48rem;
+    overflow: hidden;
+}
+
+.title-box::before {
+    content: '';
+    width: 25%;
+    height: inherit;
+    background-color: #fff;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-bottom-left-radius: 10rem;
+    z-index: -1;
+}
+
+.title-box::after {
+    content: '';
+    width: 40%;
+    height: inherit;
+    background-image: url(../img/Smile-design-1.jpg);
+    background-size: cover;
+
+    background-position: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-bottom-right-radius: 10rem;
+    z-index: -1;
+}
+
+.title-box_title {
+    font-size: 4.5rem;
+    font-family: 'vazir Bold';
+    word-spacing: -0.5rem;
+    line-height: 1.5;
+    font-weight: bolder;
+    padding-top: 6rem;
+
+}
+
+.title-box_subtitle {
+    font-size: 1.8rem;
+    font-family: 'vazir Light';
+    font-weight: 600;
+    line-height: 1.5;
+    color: rgb(102, 99, 114);
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.title-box_link {
+    padding: 1rem 5rem;
+    background-color: rgb(55, 41, 116);
+    outline: none;
+    border-radius: 1rem;
+    border: 2px solid rgb(55, 41, 116);
+    font-size: 2rem;
+    font-family: 'vazir';
+    font-weight: bold;
+    color: #fff;
+    box-shadow: 0 0 4rem rgba(55, 41, 116, 0.288);
+    cursor: pointer;
+}
+
+.title-box_link:hover {
+    background-color: #fff;
+    color: rgb(55, 41, 116);
+    transition: all 3ms ease-in;
+}
+
+
+.abute-clinic {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 8rem;
+    padding-bottom: 8rem;
+}
+
+.aboute-clinic_right {
+    width: 50%;
+}
+
+.aboute-clinic_title {
+    font-size: 3.5rem;
+    font-weight: bold;
+    word-spacing: -0.5rem;
+    margin-bottom: 4rem;
+}
+
+.aboute-clinic_description {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: rgb(102, 99, 114);
+    line-height: 1.5;
+}
+
+.aboute-clinic_left {
+    width: 30%;
+}
+
+.aboute-clinic_core-title {
+    font-size: 2.3rem;
+    font-weight: bold;
+    word-spacing: -0.3rem;
+    margin-bottom: 3rem;
+}
+
+.clinic-core {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.clinic-core_img {
+    background-image: url(../img/dentist-1.jpg);
+    width: 9rem;
+    height: 9rem;
+    background-size: cover;
+    background-position: 100%;
+    border-radius: 2rem;
+}
+
+.clinic-core_title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.clinic-core_subtitle {
+    color: rgb(102, 99, 114);
+}
+
+.aboute-clinic_subtitle {
+    color: rgb(102, 99, 114);
+}
+
+
+/*************   Statistic Section    ************/
+
+.statistic {
+    margin: 8rem 0;
+}
+
+.statistic_box {
+    position: relative;
+}
+
+.statistic_box::before {
+    position: absolute;
+    top: -3rem;
+    right: 30%;
+    color: rgb(215, 234, 252);
+    font-size: 8rem;
+    font-weight: bolder;
+    z-index: -1;
+}
+
+.statistic_box:nth-child(1)::before {
+    content: '136';
+}
+
+.statistic_box:nth-child(2)::before {
+    content: '134';
+}
+
+.statistic_box:nth-child(3)::before {
+    content: '74';
+    right: 40%;
+}
+
+.statistic_box:nth-child(4)::before {
+    content: '150';
+}
+
+.statistic_title {
+    font-weight: bold;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+
+
+/*************   answering Section    ************/
+
+.answering {
+    margin-bottom: 8rem;
+}
+.answering_wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15rem;
+}
+.answering_img {
+    width: 40%;
+    background-image: url(../img/shutterstock_1094206376-768x512.jpg.optimal.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.answering_img::before {
+    content: '';
+    width: 50%;
+    height: 25%;
+    background-color: rgb(55, 41, 116);
+    position: absolute;
+    top: -5%;
+    left: -5%;
+    z-index: -1;
+}
+
+.answering_img::after {
+    content: '';
+    width: 50%;
+    height: 25%;
+    background-color: rgb(122, 190, 253);
+    position: absolute;
+    bottom: -5%;
+    right: -5%;
+    z-index: -1;
+}
+
+.answering_text {
+    width: 40%;
+}
+
+.answering_title {
+    font-size: 3.5rem;
+    font-weight: bold;
+    word-spacing: -0.5rem;
+    margin-bottom: 4rem;
+    line-height: 1.3;
+}
+
+.answering_subtitle {
+    color: rgb(102, 99, 114);
+    margin-bottom: 4rem;
+    line-height: 1.5;
+}
+
+.answering_box {
+    display: flex;
+    text-align: center;
+}
+
+.answering_implant_svg,
+.answering_nervousness_svg {
+    width: 4rem;
+    height: 4rem;
+    background-color: rgb(215, 234, 252);
+    border-radius: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.answering_implant_title,
+.answering_nervousness_title {
+    font-size: 2.3rem;
+    font-weight: bold;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.answering_implant_caption,
+.answering_nervousness_caption {
+    color: rgb(102, 99, 114);
+    text-align: justify;
+    text-justify: newspaper;
+    width: 90%;
+    line-height: 1.5;
+}
+
+
+
+
+
+/*************   services Section    ************/
+
+.services {
+    margin-bottom: 8rem;
+}
+
+.services_title {
+    font-size: 3.5rem;
+    font-weight: bold;
+    word-spacing: -0.5rem;
+    margin-bottom: 2rem;
+}
+
+.services_caption {
+    color: rgb(102, 99, 114);
+    width: 45%;
+    line-height: 1.5;
+    margin-bottom: 4rem;
+}
+
+.services_wrapper {
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.services-box {
+    border: 2px solid rgb(215, 234, 252);
+    padding: 2rem;
+    margin-left: 0rem;
+    border-bottom: 3px solid rgb(55, 41, 116);
+    text-align: center;
+}
+
+.services-box:nth-last-child() {
+    margin-left: 0;
+}
+
+.services-box_svg {
+    text-align: center;
+}
+
+.services-box_title {
+    font-size: 2.3rem;
+    font-weight: bold;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    line-height: 1.5;
+}
+
+.services-box_caption {
+    color: rgb(102, 99, 114);
+    text-align:justify;
+    text-justify:newspaper;
+    line-height: 1.5;
+}
+
+
+
+
+/*************   smiling Section    ************/
+
+.smiling {
+    margin-bottom: 8rem;
+    text-align: center;
+}
+
+.smiling_title {
+    font-size: 3.5rem;
+    font-weight: bold;
+    word-spacing: -0.5rem;
+    margin-bottom: 2rem;
+}
+
+.smiling_caption {
+    color: rgb(102, 99, 114);
+    line-height: 1.5;
+    margin-bottom: 4rem;
+}
+
+.smiling_banner {
+    background-image: url(../img/tarhlabkhand.jpg);
+    width: 100%;
+    height: 40rem;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+
+
+/*************   question Section    ************/
+
+.question {
+    margin-bottom: 8rem;
+}
+
+.questions {
+    max-height: 50rem;
+    overflow-y: auto;
+}
+
+.question_title {
+    font-size: 2.3rem;
+    font-weight: bold;
+    margin-bottom: 4rem;
+}
+
+.question-box {
+    border: 1px solid rgb(215, 234, 252);
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.question-box_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.question-box_wrapper--color{
+    background-color: rgb(215, 234, 252);
+}
+.question-box_title {
+    font-size: 1.7rem;
+    font-weight: bold;
+    padding: 1rem;
+}
+.question-box_arrow{
+    border-radius: 2rem;
+    cursor: pointer;
+    position: relative;
+}
+.question-box_arrow:hover{
+    background-color: #aaa;
+}
+.question-box_arrow--hide{
+    display: none;
+}
+.question-box_caption {
+    color: rgb(102, 99, 114);
+    line-height: 1.5;
+    display: none;
+}
+.question-box_caption--show{
+    display: block;
+}
+.question_banner {
+    background-image: url(../img/hollywood-smile.jpg);
+    height: 50rem;
+    background-position: center;
+    border-bottom-right-radius: 10rem;
+}
+
+
+
+
+
+
+/*************   doctors Section    ************/
+
+
+.doctors {
+    margin-bottom: 8rem;
+}
+
+.doctors_title {
+    font-size: 3.5rem;
+    font-weight: bold;
+    word-spacing: -0.5rem;
+    margin-bottom: 4rem;
+    text-align: center;
+}
+
+.swiper-slide_content {
+    border-radius: 5rem;
+}
+
+.swiper-slide_content:hover {
+    background-color: rgb(55, 41, 116);
+    color: #fff;
+    transition: all 3ms ease-in;
+}
+
+.swiper-slide_img {
+    width: 100%;
+    height: 30rem;
+    object-fit: cover;
+    border-radius: 5rem;
+
+}
+
+.swiper-slide_title {
+    font-size: 1.7rem;
+    font-weight: bold;
+    padding-right: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.swiper-slide_subtitle {
+    color: rgb(102, 99, 114);
+    line-height: 1.5;
+    padding-bottom: 2rem;
+    padding-right: 2rem;
+    font-weight: bold;
+}
+
+
+.swiper-pagination {
+    position: static !important;
+    margin-top: 1rem;
+}
+
+.swiper-pagination-bullet {
+    width: 1.8rem !important;
+    height: 1.8rem !important;
+    border: 0.4rem solid rgb(122, 190, 253) !important;
+    background: rgb(215, 234, 252) !important;
+    opacity: 1 !important;
+}
+
+.swiper-pagination-bullet-active {
+    border-color: rgb(55, 41, 116) !important;
+}
+
+
+
+
+
+
+
+
+/*************   refrent Section    ************/
+
+.refrent {
+    margin-bottom: 8rem;
+}
+
+.refrent_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.refrent_wrapper-box {
+    width: 50%;
+}
+
+.refrent_title {
+    font-size: 3.5rem;
+    font-weight: bold;
+    word-spacing: -0.5rem;
+    margin-bottom: 4rem;
+}
+
+.refrent_subtitle {
+    color: rgb(102, 99, 114);
+    line-height: 1.5;
+    font-weight: bold;
+    max-width: 60%;
+}
+
+.swiper-2 {
+    padding: 0 4rem;
+}
+
+.swiper-slide_content_refrent {
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.swiper-slide_text {
+    color: rgb(102, 99, 114);
+    line-height: 1.5;
+}
+
+.swiper-slide_person {
+    display: flex;
+    align-items: center;
+}
+
+.swiper-slide_text::before,
+.swiper-slide_text::after {
+    content: '؛';
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.refrent_banner {
+    width: 40%;
+    background-image: url(../img/toranj8.jpg);
+    border-radius: 5rem;
+    height: 40rem;
+    background-position: 60%;
+}
+
+.swiper-slide_person-img {
+    width: 10rem;
+    border-radius: 2rem;
+    margin-left: 2rem;
+}
+
+.swiper-slide_person-name {
+    font-weight: bold;
+}
+
+.swiper-button-next {
+    bottom: 0 !important;
+    left: 0 !important;
+    right: 80% !important;
+    margin: auto;
+}
+
+.swiper-button-prev {
+    bottom: 0 !important;
+    left: 0 !important;
+    right: 70% !important;
+    margin: auto;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    padding: 0.5rem 1rem;
+    border-radius: 5rem;
+    font-size: 2rem;
+    color: #fff;
+    background-color: rgb(122, 190, 253);
+}
+
+
+
+
+/*************   offer Section    ************/
+
+.offer {
+    background-color: #fff;
+    padding: 4rem;
+    box-shadow: 0 0 4rem rgba(55, 41, 116, 0.288);
+    width: 80%;
+    margin: 0 auto;
+    border-top-right-radius: 10rem;
+    border-bottom-left-radius: 10rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    transform: translateY(4rem);
+}
+
+.offer_texts {
+    flex-basis: 48%;
+}
+
+.offer_title {
+    font-size: 3.5rem;
+    font-weight: bold;
+    word-spacing: -0.5rem;
+    margin-bottom: 4rem;
+}
+
+.offer_subtitle {
+    color: rgb(102, 99, 114);
+    line-height: 1.5;
+    font-weight: bold;
+}
+
+.offer_email-box {
+    flex-basis: 48%;
+}
+
+#email-addres {
+    width: 70%;
+    padding: 1rem;
+    font-size: 1.8rem;
+    font-family: 'vazir';
+    border-radius: 1rem;
+    outline: none;
+    border: none;
+    background-color: rgb(215, 234, 252);
+}
+
+.email-register {
+    font-size: 1.8rem;
+    padding: 1rem 2rem;
+    background-color: rgb(55, 41, 116);
+    outline: none;
+    border-radius: 1rem;
+    border: 2px solid rgb(55, 41, 116);
+    font-family: 'vazir';
+    font-weight: bold;
+    color: #fff;
+    box-shadow: 0 0 4rem rgba(55, 41, 116, 0.288);
+}
+
+.email-register:hover {
+    background-color: #fff;
+    color: rgb(55, 41, 116);
+    transition: all 3ms ease-in;
+}
+
+
+
+
+/*************   footer    ************/
+
+.footer {
+    background-color: rgb(55, 41, 116);
+    padding-top: 12rem;
+    padding-bottom: 6rem;
+    color: #fff;
+    line-height: 2;
+}
+
+.footer_wrapper {
+    justify-content: space-between;
+}
+
+.footer-address {
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 3rem;
+}
+
+.whatsapp,
+.instagram,
+.telegram {
+    background-color: rgb(102, 99, 114);
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.social_svg {
+    fill: #aaa;
+}
+
+.whatsapp:hover .social_svg {
+    fill: rgb(33, 228, 33);
+}
+
+.instagram:hover .social_svg {
+    fill: rgb(245, 8, 213)
+}
+
+.telegram:hover .social_svg {
+    fill: rgb(33, 101, 228);
+}
+
+.whatsapp:hover,
+.instagram:hover,
+.telegram:hover {
+    background-color: #fff;
+    transition: all 3ms ease-in;
+}
+
+.access {
+    padding-right: 5rem;
+}
+
+.access_wrapper {
+    display: flex;
+    gap: 2rem;
+}
+
+.access_wrapper>div {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.access_link {
+    color: #fff;
+}
+
+.access_link:hover{
+    color: rgb(122, 190, 253);
+}
+
+.news-box {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.news-box_img {
+    width: 10rem;
+    height: 10rem;
+    object-fit: cover;
+    border-radius: 2rem;
+}
+
+.news-box_title {
+    font-weight: bold;
+}
+
+.news-box_date {
+    padding: 1rem;
+}

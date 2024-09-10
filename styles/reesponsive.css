@@ -1,0 +1,548 @@
+@media (max-width: 1400px) {
+    .navbar {
+        gap: 2rem;
+    }
+
+    .navbar_list {
+        gap: 4rem;
+    }
+
+    .answering_title {
+        font-size: 3rem;
+    }
+
+    .answering_wrapper {
+        gap: 10rem;
+    }
+
+    .answering_img {
+        background-position: 52% 50%;
+        width: 45%;
+    }
+
+    .services-box_title {
+        font-size: 1.8rem;
+    }
+
+    .services_caption {
+        width: 100%;
+    }
+
+    .swiper-button-next {
+        right: 70% !important;
+    }
+
+    .swiper-button-prev {
+        right: 55% !important;
+    }
+
+    .offer {
+        width: 90%;
+    }
+
+    .offer_title {
+        font-size: 3rem;
+    }
+
+}
+
+@media (max-width: 1200px) {
+    .navbar_list {
+        gap: 3rem;
+    }
+
+    .navbar_link {
+        font-size: 1.7rem;
+    }
+
+    .navbar_button {
+        padding: .8rem 2.5rem;
+        font-size: 1.6rem;
+    }
+
+    .title-box_title {
+        font-size: 4rem;
+    }
+
+    .title-box {
+        width: 50%;
+    }
+
+    .title-box::after {
+        background-position: 53%;
+    }
+
+    .aboute-clinic_title {
+        font-size: 3rem;
+    }
+
+    .aboute-clinic_core-title {
+        font-size: 1.8rem;
+    }
+
+    .answering_title {
+        font-size: 1.8rem;
+        margin-bottom: 2rem;
+    }
+
+    .answering_implant_title,
+    .answering_nervousness_title {
+        font-size: 1.6rem;
+    }
+
+    .answering_wrapper {
+        gap: 5rem;
+    }
+
+    .answering_img {
+        background-position: 52% 50%;
+        width: 45%;
+    }
+
+    .services_title {
+        font-size: 3rem;
+    }
+
+    .smiling_title {
+        font-size: 3rem;
+    }
+
+    .doctors_title,
+    .refrent_title {
+        font-size: 3rem;
+    }
+
+    .refrent_subtitle {
+        max-width: 100%;
+    }
+
+    .offer_title {
+        font-size: 2.3rem;
+        margin-bottom: 2rem;
+    }
+
+    .email-register {
+        font-size: 1.7rem;
+        padding: 1rem 1.5rem;
+    }
+
+    #email-addres {
+        width: 60%;
+    }
+}
+
+@media (max-width: 992px) {
+    .logo {
+        width: 7rem;
+    }
+
+    .navbar_list {
+        gap: 2rem;
+    }
+
+    .navbar_link {
+        font-size: 1.6rem;
+    }
+
+    .navbar_button {
+        padding: .5rem 1.5rem;
+        font-size: 1.4rem;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .navbar {
+        width: 50%;
+    }
+
+    .navbar_list {
+        display: none;
+    }
+
+    .title-box_title {
+        font-size: 3rem;
+    }
+
+    .title-box_subtitle {
+        font-size: 1.7rem;
+    }
+
+    .title-box_link {
+        font-size: 1rem;
+        padding: 1rem 3rem;
+        font-size: 1.7rem;
+    }
+
+    .title-box::after {
+        background-position: center
+    }
+
+    .abute-clinic {
+        margin-top: 4rem;
+        padding-bottom: 4rem;
+    }
+
+    .aboute-clinic_title {
+        font-size: 2.3rem;
+        margin-bottom: 2rem;
+    }
+
+    .aboute-clinic_description {
+        font-size: 1.5rem;
+    }
+
+    .aboute-clinic_core-title {
+        font-size: 1.7rem;
+    }
+
+    .statistic_box {
+        margin-bottom: 8rem;
+    }
+
+    .answering {
+        margin-top: -6rem;
+    }
+
+    .answering_img {
+        width: 100%;
+        height: 40vh;
+    }
+
+    .answering_text {
+        width: 100%;
+    }
+
+    .services_title {
+        font-size: 2.3rem;
+    }
+
+    .smiling_title {
+        font-size: 2.3rem;
+    }
+
+    .smiling_banner {
+        height: 30rem;
+    }
+
+    .question_banner {
+        height: 45rem;
+        background-position-y: 30%;
+    }
+
+    .question-box_title {
+        font-size: 1.6rem;
+    }
+
+    .question_title {
+        font-size: 2rem;
+    }
+
+    .questions {
+        max-height: 45rem;
+    }
+
+    .doctors_title,
+    .refrent_title {
+        font-size: 2.3rem;
+    }
+
+    .refrent_banner {
+        width: 50%;
+    }
+
+    .swiper-button-next {
+        right: 70% !important;
+        bottom: -10% !important;
+    }
+
+    .swiper-button-prev {
+        right: 50% !important;
+        bottom: -10% !important;
+    }
+
+    .refrent_title {
+        margin-bottom: 2rem;
+    }
+
+    .swiper-2 {
+        padding: 0 2rem;
+    }
+
+    .swiper-slide_content_refrent {
+        height: 20rem;
+    }
+
+    .offer {
+        text-align: center;
+    }
+
+    .offer_title {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .offer_texts {
+        flex-basis: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .offer_email-box {
+        flex-basis: 100%;
+    }
+
+    .footer_title {
+        font-size: 1.7rem;
+        margin-bottom: 1rem;
+    }
+
+    .access_wrapper {
+        gap: 5rem;
+    }
+
+    .answering,
+    .services,
+    .refrent,
+    .question {
+        margin-bottom: 4rem;
+    }
+
+    .footer {
+        padding-top: 8rem;
+        padding-bottom: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        padding: 1.2rem;
+    }
+
+    .title-box_title {
+        font-size: 2.5rem;
+    }
+
+    .title-box_subtitle {
+        font-size: 1.5rem;
+    }
+
+    .title-box_link {
+        font-size: 1rem;
+        padding: 1rem 2rem;
+        font-size: 1.5rem;
+    }
+
+    .aboute-clinic_right {
+        width: 100%;
+    }
+
+    .aboute-clinic_left {
+        width: 100%;
+    }
+
+    .aboute-clinic_core-title {
+        margin-top: 4rem;
+    }
+
+    .aboute-clinic_title {
+        font-size: 2rem;
+    }
+
+    .statistic {
+        margin: 4rem 0;
+    }
+
+    .statistic_box::before {
+        right: 25%;
+    }
+
+    .statistic_box:nth-child(3)::before {
+        right: 35%;
+    }
+
+    .services_title {
+        font-size: 2rem;
+    }
+
+    .smiling_title {
+        font-size: 2rem;
+    }
+
+    .smiling_banner {
+        height: 20rem;
+    }
+
+    .question_banner {
+        height: 40rem;
+        background-position-y: 25%;
+        border-bottom-left-radius: 10rem;
+    }
+
+    .doctors_title,
+    .refrent_title {
+        font-size: 2rem;
+    }
+
+    .swiper-slide_content {
+        text-align: center;
+    }
+
+    .refrent_wrapper {
+        flex-wrap: wrap;
+    }
+
+    .refrent_wrapper-box {
+        width: 100%;
+    }
+
+    .refrent_banner {
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    .offer {
+        transform: translateY(6rem);
+    }
+
+    .offer_subtitle {
+        font-size: 1.4rem;
+    }
+
+    .smiling,
+    .doctors {
+        margin-bottom: 4rem;
+    }
+
+}
+
+@media (max-width: 576px) {
+    .title-box::after {
+        width: 100%;
+        height: 40vh;
+        min-height: 20rem;
+        background-position-y: 30%;
+        left: 0;
+        right: 0;
+        top: 0;
+        border-bottom-right-radius: 10rem;
+        border-bottom-left-radius: 10rem;
+    }
+
+    .title-box {
+        width: 100%;
+        padding-top: 30vh;
+        height: 100vh;
+    }
+
+    .statistic_box::before {
+        right: 35%;
+    }
+
+    .statistic_box:nth-child(3)::before {
+        right: 40%;
+    }
+
+    .answering_box {
+        flex-wrap: wrap;
+    }
+
+    .answering_implant,
+    .answering_nervousness {
+        width: 100%;
+    }
+
+    .answering_implant_caption,
+    .answering_nervousness_caption {
+        width: 100%;
+    }
+
+    .question_banner {
+        height: 27rem;
+        background-size: contain;
+        background-repeat: no-repeat;
+        border-radius: 0;
+        margin-bottom: 0;
+    }
+
+    .offer {
+        width: 100%;
+        padding: 2rem;
+        border-top-right-radius: 5rem;
+        border-bottom-left-radius: 5rem;
+    }
+
+    .access {
+        padding-right: 0;
+    }
+}
+
+@media (max-width: 400px) {
+    .logo {
+        width: 5rem;
+    }
+
+    .navbar_button {
+        padding: .5rem .5rem;
+        font-size: 1.3rem;
+    }
+
+    .menu-list_link {
+        font-size: 1.4rem;
+    }
+
+    .menu-list {
+        width: 100%;
+        top: 6.7rem;
+    }
+
+    .statistic_box::before {
+        right: 30%;
+    }
+
+    .statistic_box:nth-child(3)::before {
+        right: 35%;
+    }
+
+    .smiling_banner {
+        height: 15rem;
+    }
+
+    .swiper-slide_person-img {
+        width: 6rem;
+        height: 6rem;
+        border-radius: 6rem;
+        margin-left: 1rem;
+    }
+
+    .swiper-button-next::after,
+    .swiper-button-prev::after {
+        padding: 0.5rem 0.7rem;
+        font-size: 1.3rem;
+    }
+
+    .swiper-slide_person-name {
+        font-size: 1.4rem;
+    }
+
+    .refrent_title {
+        font-size: 1.6rem;
+    }
+
+    .refrent_subtitle {
+        font-size: 1.5rem;
+    }
+
+    .swiper-slide_text {
+        line-height: 1;
+    }
+
+    #email-addres{
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .email-register {
+        width: 100%;
+    }
+}
