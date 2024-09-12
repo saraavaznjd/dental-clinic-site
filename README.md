@@ -1,5 +1,5 @@
 <h1>پروژه سایت دندانپزشکی</h1>
 </br>
-<h3>[برای مشاهده دمو سایت کلیک کنید](saraavaznjd.github.io/dental-clinic-site/)</h3>
+#[demo](https://saraavaznjd.github.io/dental-clinic-site/)
 </br>
 <p style="font-size:1.6rem">این سایت با استفاده از html,css,js خام طراحی شده و کاملا ریسپانسیو میباشد.</p>
